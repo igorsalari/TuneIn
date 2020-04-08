@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.0 on darwin)" generated="20200407 20:02:02.295" rpa="false">
+<suite id="s1" name="CarouselText" source="/Users/Zeon/Dev/TuneIn/TestCases/CarouselText.robot">
+<test id="s1-t1" name="Test_Carousel_Slide1_Text">
+<kw name="Open Browser To Main Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200407 20:02:02.515" level="INFO">Opening browser 'safari' to base url 'https://tunein.com/?homecarouselautoscroll=false'.</msg>
+<status status="PASS" starttime="20200407 20:02:02.515" endtime="20200407 20:02:26.634"></status>
+</kw>
+<status status="PASS" starttime="20200407 20:02:02.514" endtime="20200407 20:02:26.635"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200407 20:02:26.635" endtime="20200407 20:02:26.752"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>TuneIn | Free Internet Radio | NFL, Sports, Podcasts, Music &amp; News</arg>
+</arguments>
+<msg timestamp="20200407 20:02:26.757" level="INFO">Page title is 'TuneIn | Free Internet Radio | NFL, Sports, Podcasts, Music &amp; News'.</msg>
+<status status="PASS" starttime="20200407 20:02:26.752" endtime="20200407 20:02:26.757"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://li[@data-testid='carouselControlDot-0']</arg>
+</arguments>
+<msg timestamp="20200407 20:02:26.757" level="INFO">Clicking element 'xpath://li[@data-testid='carouselControlDot-0']'.</msg>
+<status status="PASS" starttime="20200407 20:02:26.757" endtime="20200407 20:02:26.972"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer0']//a[@data-testid='line1']</arg>
+<arg>MORE JAZZ.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:26.972" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer0']//a[@data-testid='line1']' contains exact text 'MORE JAZZ.'.</msg>
+<status status="PASS" starttime="20200407 20:02:26.972" endtime="20200407 20:02:26.981"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer0']//a[@data-testid='line2']</arg>
+<arg>LESS ADS.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:26.982" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer0']//a[@data-testid='line2']' contains exact text 'LESS ADS.'.</msg>
+<status status="PASS" starttime="20200407 20:02:26.981" endtime="20200407 20:02:26.989"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer0']//a[@data-testid='line3']</arg>
+<arg>GO PREMIUM.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:26.990" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer0']//a[@data-testid='line3']' contains exact text 'GO PREMIUM.'.</msg>
+<status status="PASS" starttime="20200407 20:02:26.989" endtime="20200407 20:02:26.997"></status>
+</kw>
+<status status="PASS" starttime="20200407 20:02:02.513" endtime="20200407 20:02:26.998" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Test_Carousel_Slide2_Text">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://li[@data-testid='carouselControlDot-1']</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.002" level="INFO">Clicking element 'xpath://li[@data-testid='carouselControlDot-1']'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.002" endtime="20200407 20:02:27.058"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer1']//a[@data-testid='line1']</arg>
+<arg>STAY INFORMED</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.058" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer1']//a[@data-testid='line1']' contains exact text 'STAY INFORMED'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.058" endtime="20200407 20:02:27.078"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer1']//a[@data-testid='line2']</arg>
+<arg>ON CORONAVIRUS.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.079" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer1']//a[@data-testid='line2']' contains exact text 'ON CORONAVIRUS.'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.078" endtime="20200407 20:02:27.091"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer1']//a[@data-testid='line3']</arg>
+<arg>HEAR THE LATEST.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.092" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer1']//a[@data-testid='line3']' contains exact text 'HEAR THE LATEST.'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.091" endtime="20200407 20:02:27.100"></status>
+</kw>
+<status status="PASS" starttime="20200407 20:02:27.001" endtime="20200407 20:02:27.100" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Test_Carousel_Slide3_Text">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://li[@data-testid='carouselControlDot-2']</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.102" level="INFO">Clicking element 'xpath://li[@data-testid='carouselControlDot-2']'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.101" endtime="20200407 20:02:27.145"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer2']//a[@data-testid='line1']</arg>
+<arg>NINETIES NOSTALGIA</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.146" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer2']//a[@data-testid='line1']' contains exact text 'NINETIES NOSTALGIA'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.145" endtime="20200407 20:02:27.178"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer2']//a[@data-testid='line2']</arg>
+<arg>HAS A NEW HOME.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.178" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer2']//a[@data-testid='line2']' contains exact text 'HAS A NEW HOME.'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.178" endtime="20200407 20:02:27.189"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer2']//a[@data-testid='line3']</arg>
+<arg>LET'S ROCK.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.189" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer2']//a[@data-testid='line3']' contains exact text 'LET'S ROCK.'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.189" endtime="20200407 20:02:27.201"></status>
+</kw>
+<status status="PASS" starttime="20200407 20:02:27.100" endtime="20200407 20:02:27.201" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Test_Carousel_Slide4_Text">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://li[@data-testid='carouselControlDot-3']</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.203" level="INFO">Clicking element 'xpath://li[@data-testid='carouselControlDot-3']'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.202" endtime="20200407 20:02:27.248"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer3']//a[@data-testid='line1']</arg>
+<arg>YOUR SOURCE FOR</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.249" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer3']//a[@data-testid='line1']' contains exact text 'YOUR SOURCE FOR'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.249" endtime="20200407 20:02:27.276"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer3']//a[@data-testid='line2']</arg>
+<arg>ELECTION COVERAGE.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.278" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer3']//a[@data-testid='line2']' contains exact text 'ELECTION COVERAGE.'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.277" endtime="20200407 20:02:27.288"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@data-testid='heroCarouselTextContainer3']//a[@data-testid='line3']</arg>
+<arg>LIVE &amp; ON-DEMAND.</arg>
+</arguments>
+<msg timestamp="20200407 20:02:27.288" level="INFO">Verifying element 'xpath://div[@data-testid='heroCarouselTextContainer3']//a[@data-testid='line3']' contains exact text 'LIVE &amp; ON-DEMAND.'.</msg>
+<status status="PASS" starttime="20200407 20:02:27.288" endtime="20200407 20:02:27.301"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200407 20:02:27.301" endtime="20200407 20:02:27.465"></status>
+</kw>
+<status status="PASS" starttime="20200407 20:02:27.202" endtime="20200407 20:02:27.466" critical="yes"></status>
+</test>
+<doc>Verification of the text lines for each slide for the carousel</doc>
+<status status="PASS" starttime="20200407 20:02:02.296" endtime="20200407 20:02:27.467"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="CarouselText">CarouselText</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
